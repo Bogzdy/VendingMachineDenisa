@@ -10,7 +10,7 @@ public interface IVendingMachine {
 
     Item getItem(int productCode);
 
-    void payItem(int productCode, Queue<Coin> amountPaid);
+    boolean payItem(int productCode, Queue<Coin> amountPaid);
 
     Queue<Coin> getChange(BigDecimal amountExpected, BigDecimal amountReceived);
 
